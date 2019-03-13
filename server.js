@@ -8,7 +8,7 @@ app.use(cors({origin: 'http://localhost:63342'}));
 
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log('meow')
 })
 
